@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Map</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Church Doors</h1>
-        <p>The image below is a front of a Church with three statue.</p>
+      <h1 aria-label="header">Church Doors</h1>
+      <p>The image below is a front of a Church with three statue.</p>
     </header>
-</body>
+    <!-- Image and map -->
+    <main>
+      <img
+        width="600px"
+        src="/imgs/pexels-photo-17831888.jpeg"
+        alt="Front door of a church"
+        usemap="#churchDoorMap"
+      />
+      <map name="churchDoorMap" >
+        <area shape="rect" coords="259,40,360,400" alt="statue on the top" href="www.example.com/st">
+    </main>
+  </body>
 </html>
